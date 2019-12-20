@@ -111,7 +111,7 @@ export default {
       {
         headerName: "Nome",
         field: "name",
-        width: 500,
+        width: 300,
         filterParams: { newRowsAction: "keep" },
         checkboxSelection: params => {
         return params.columnApi.getRowGroupColumns().length === 0;
@@ -123,20 +123,20 @@ export default {
       {
         headerName: "Tipo",
         field: "filetype",
-        width: 90,
+        width: 120,
         filterParams: { newRowsAction: "keep" }
       },
       {
         headerName: "Tamanho",
         field: "size",
         valueFormatter: sizeFormatter,
-        width: 90,
+        width: 120,
         filterParams: { newRowsAction: "keep" }
       },
       {
         headerName: "Data do envio",
         field: "since_added",
-        width: 90,
+        width: 120,
         sort: "desc"
       }
     ];
@@ -172,11 +172,13 @@ export default {
       params.api.setRowData();
     },
     onRowSelected(event) {
+      event;
       const selectedNodes = this.gridApi.getSelectedNodes();
       const selectedData = selectedNodes.map(node => node.data);
       const selectedDataStringPresentation = selectedData
         .map(node => node.name + " " + node.file_id)
         .join(", ");
+        selectedDataStringPresentation;
       this.selectedDataSizes = selectedData.map(node => node.size);
       // get the total size
       const add = (a, b) => a + b;
