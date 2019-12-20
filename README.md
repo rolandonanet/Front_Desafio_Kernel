@@ -10,7 +10,11 @@ Um aplicativo da web de gerenciador de arquivos com Spring, mongo e vuejs no fro
 
 ## Setup Projeto
 ```
-npm install
+1 - Iniciar a API com Java e Spring -> https://github.com/rolandonanet/API_Desafio_Kernel
+```
+
+```
+2 - npm install
 ```
 
 ### Comando para iniciar a aplicação
