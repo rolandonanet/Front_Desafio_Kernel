@@ -1,26 +1,21 @@
 <template>
   <b-container>
     <br />
-
-    <!-- PART-2: UPLOAD A FILE -->
     <b-card bg-variant="light">
       <b-form-file
         v-model="selFile"
         ref="form"
         placeholder="Solte o arquivo aqui..."
       />
-      <b-button variant="primary" @click="submitFile()">
+      <b-button variant="dark" @click="submitFile()">
         Enviar &nbsp; &nbsp;<font-awesome-icon icon="upload"
       /></b-button>
     </b-card>
-
     <br />
-
-    <!-- PART-3: DELETE FILE(S) -->
     <b-card bg-variant="light">
       <b-row>
         <b-col col="4"
-          ><b-button variant="danger" @click="deleteFile()">
+          ><b-button variant="dark" @click="deleteFile()">
             Deletar &nbsp;&nbsp;<font-awesome-icon icon="trash-alt"
           /></b-button>
         </b-col>
@@ -35,10 +30,7 @@
           </b-card>
         </b-col>
       </b-row>
-
       <hr />
-
-      <!-- PART-1: LIST FILES -->
       <ag-grid-vue
         style="width: 100%; height: 500px; border: 1px solid #e7e9ea; border-radius: 4px;"
         class="ag-theme-material"
@@ -68,9 +60,6 @@
       >
       </ag-grid-vue>
     </b-card>
-
-    <!-- PART-3: DELETE FILE(S) -->
-    <!-- Modal Component -->
     <b-modal
       v-if="mShow"
       v-model="modal"

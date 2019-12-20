@@ -1,6 +1,6 @@
 <template>
   <header class="head">
-    <b-navbar type="dark" variant="primary" toggleable>
+    <b-navbar type="dark" variant="dark" toggleable>
       <b-navbar-brand href="#">
         <font-awesome-icon icon="tasks"/>&nbsp; &nbsp; Gerenciador de Arquivos
       </b-navbar-brand>
