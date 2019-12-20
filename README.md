@@ -1,24 +1,23 @@
-# front_file_manager_vue
+# Front Desafio Inmetrics
 
-## Project setup
+<div style="text-align:center"><img src ="./front.png" /></div>
+
+## Descrição
+Um aplicativo da web de gerenciador de arquivos com Spring, mongo e vuejs no front-end com integração de tabelas de dados do gr-grid
+
+## Requisitos de sistema
+* Node.js
+
+## Setup Projeto
 ```
-npm install
+1 - Iniciar a API com Java e Spring -> https://github.com/rolandonanet/API_Desafio_Kernel
 ```
 
-### Compiles and hot-reloads for development
+```
+2 - npm install
+```
+
+### Comando para iniciar a aplicação
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
