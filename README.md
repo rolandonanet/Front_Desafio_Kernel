@@ -1,24 +1,18 @@
-# front_file_manager_vue
+# Front Desafio Inmetrics
 
-## Project setup
+<div style="text-align:center"><img src ="./front.png" /></div>
+
+## Descrição
+
+## Requisitos de sistema
+* Node.js
+
+## Setup Projeto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Comando para iniciar a aplicação
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
